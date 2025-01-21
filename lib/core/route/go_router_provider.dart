@@ -2,19 +2,19 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:synthlyzr/core/route/route_name.dart';
 import 'package:synthlyzr/demo_screen.dart';
-import 'package:synthlyzr/features/login/presentation/ui/login_screen.dart';
+import 'package:synthlyzr/features/login/presentation/screens/login_screen.dart';
 import 'package:synthlyzr/features/signup/signup_screen.dart';
 import 'package:synthlyzr/features/spreadsheet/presentation/screens/spreadsheet_preview_screen.dart';
 
 final goRouterProvider = Provider<GoRouter>(
   (ref) {
     return GoRouter(
-      initialLocation: "/signup",
+      initialLocation: "/login",
       routes: [
         GoRoute(
           path: "/login",
           name: loginRoute,
-          builder: (context, state) => const LoginScreen(),
+          builder: (context, state) => const LoginScreenMain(),
         ),
         GoRoute(
           path: "/signup",

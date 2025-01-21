@@ -3,7 +3,6 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:file_picker/file_picker.dart';
-import '../../domain/entities/spreadsheet_file.dart';
 import '../provider/spreadsheet_provider.dart';
 
 import '../widgets/spreadsheet_table_widget.dart';
