@@ -1,0 +1,1 @@
+const allowedExtensions = ['xlsx', 'csv'];
